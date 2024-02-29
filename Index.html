@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="Style.css" rel="stylesheet" type="text/css">
+    <title>Title</title>
+</head>
+<body>
+<div class="container">
+    <div class="content">
+        <div class="row">
+            <img class="avatar" src="Media.png"  alt="default">
+        </div>
+        <div class="row">
+            <button id="special_button">King</button>
+            <button id="special_button2">Queen</button>
+            <button id="special_button3">Ice</button>
+        </div>
+        <div class="row">
+            <button id="special_button4">Kieron</button>
+            <button id="special_button5">Luci</button>
+            <button id="special_button6">Mr.Memory</button>
+        </div>
+
+        <button id="restart">Restart</button>
+    </div>
+</div>
+<script>
+    const button6 = document.getElementById('special_button6')
+    const button5 = document.getElementById('special_button5')
+    const button4 = document.getElementById('special_button4')
+    const button3 = document.getElementById('special_button3')
+    const button2 = document.getElementById('special_button2')
+    const button = document.getElementById('special_button')
+    const picture = document.querySelector('img')
+
+    const restartButton = document.getElementById('restart')
+
+    button.addEventListener('click', function() {
+        removeAvatar();
+        picture.src='Media1.png';
+    });
+    button2.addEventListener('click', function() {
+        removeAvatar();
+        picture.src='Media2.png';
+    });
+    button3.addEventListener('click', function() {
+        removeAvatar();
+        picture.src='Media3.png';
+    });
+    button4.addEventListener('click', function() {
+        removeAvatar();
+        picture.src='Media4.png';
+    });
+    button5.addEventListener('click', function() {
+        removeAvatar();
+        picture.src='Media5.png';
+    });
+    button6.addEventListener('click', function() {
+        removeAvatar();
+        picture.src='Media6.png';
+    });
+    restartButton.addEventListener('click', function (){
+        removeAvatar();
+    });
+    function removeAvatar(){
+        picture.src='Media.png'
+
+
+    }
+</script>
+</body>
+</html>
